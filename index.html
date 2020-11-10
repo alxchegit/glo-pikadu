@@ -190,6 +190,18 @@
     </main>
     <!-- /.posts -->
     <aside class="sidebar">
+
+      <div class="login">
+        <form action="" class="login-form">
+          <h2 class="login-title">Авторизация</h2>
+          <input type="email" placeholder="Введите email" class="login-input login-email" name="email" minlength="3" required>
+          <input type="password" placeholder="Введите пароль" class="login-input login-password" name="password" minlength="3" required>
+          <a href="#" class="login-forget">Забыли пароль!</a>
+          <button type="submit" class="login-signin">Войти</button>
+          <a href="#" class="login-signup">Регистрация</a>
+        </form>
+      </div>
+
       <div class="user">
         <a href="#" class="user-info">
           <img width="40" height="40" src="img/avatar.jpeg" alt="photo: user" class="user-avatar">
@@ -251,8 +263,16 @@
       <a href="#" class="ad"></a>
     </aside>
     <!-- /.sidebar -->
-  </div>
+  </div> 
   <!-- /.content -->
   <script src="js/main.js"></script>
+  <script> 
+    document.write(
+      '<script src="http://' +
+        (location.host || '${1:localhost}').split(':')[0] +
+        ':${2:35729}/livereload.js?snipver=1"></' +
+        'script>'
+    );     
+  </script>
 </body>
 </html>
